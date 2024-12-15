@@ -1,0 +1,134 @@
+body {
+    height: 100dvh;
+}
+
+a {
+    color: #327FD8;
+}
+
+.header {
+    border: none;
+    padding: 0;
+
+    & > div {
+        width: 55%;
+    }
+
+    & .logo {
+        width: 40%;
+        font-size: 25px;
+        color: #fff;
+        background: #74a7e2;
+        padding: 30px 10%;
+        justify-content: flex-start;
+
+        & img {
+            width: 30px;
+            height: 25px;
+        }
+    }
+
+    & .nreg {
+        display: inline-flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 30px 10%;
+        gap: 50px;
+    }
+
+    & .signup {
+        color: #000;
+        padding: 7px 20px;
+        border: 1px solid #000;
+        border-radius: 5px;
+    }
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    margin-top: -5px;
+
+    & > div {
+        width: 55%;
+
+        img {
+            width: 100%;
+            height: 100vh;
+        }
+    }
+
+    .img {
+        width: 40%;
+        background: #74a7e2;
+    }
+    
+
+    & .main-page {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        padding-left: 5%;
+        padding-right: 10%;
+
+        .forms {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 15px;
+
+            & p {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                & input {
+                    outline: none;
+                    padding: 5px;
+                }
+            }
+
+            & .or {
+                position: relative;
+                padding: 10px;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                margin: 5px;
+
+                & span {
+                    text-align: center;
+                    padding: 0 10px;
+                    width: max-content;
+                    background: #e8e9e4;
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    border-bottom: 1px solid #000;
+                    z-index: -10;
+                    top: 22.5px;
+                }
+            }
+
+            & button {
+                padding: 5px 35px;
+                background: #327FD8;
+                border: none;
+                border-radius: 5px;
+                color: #fff;
+                font-size: 500;
+                font-size: 15px;
+                width: max-content;
+                cursor: pointer;
+                width: 100%;
+            }
+        }
+
+    }
+
+}

@@ -1,0 +1,46 @@
+#courseForm {
+    & h4, h5 {
+        padding: 15px 0;
+    }
+
+    h4 {
+        /* text-align: center; */
+        text-transform: uppercase;
+        font-size: 25px;
+        margin-top: 35px;
+    }
+    
+    & #sectionsContainer {
+        margin-bottom: 15px;
+    }
+    
+    & #subSections {
+        margin: 15px 0;
+        padding-left: 25px;
+    }
+    
+    & p{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 15px 0;
+    }
+    
+    & input {
+        outline: none;
+        padding: 5px;
+        border: 1px solid #327FD8;
+        background: transparent;
+    }
+    
+    & button {
+        padding: 5px;
+        outline: none;
+        border: 1px solid #327FD8;
+        margin: 10px 0;
+    }
+
+    & .adsub {
+        margin-left: 15px;
+    }
+}

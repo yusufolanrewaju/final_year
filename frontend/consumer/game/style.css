@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  #ai-instructor {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  #ai-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  #ai-text {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  #header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  #puzzle-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .piece, .slot {
+    background-color: #367779;
+    color: white;
+    font-weight: 700;
+    margin: 5px;
+    border: 2px solid gold;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .piece.selected {
+    background-color: #2f5a28;
+  }
+  
+  .slot {
+    background-color: #97939365;
+    border: 2px dashed #353434b7;
+  }
+  
+  #result-screen.hidden {
+    display: none;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #gameCanvas {
+    border: 2px solid #333;
+    margin: 20px auto;
+    display: block;
+}
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}

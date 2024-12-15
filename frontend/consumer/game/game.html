@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Code Puzzle Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- AI Instructor Section -->
+  <div id="ai-instructor">
+    <img src="images/chatbot.png" title="chatbot icons" alt="AI" id="ai-logo" />
+    <div id="ai-text"></div>
+  </div>
+
+  <!-- Game Interface -->
+  <div id="game-interface">
+    <div id="header">
+      <div id="difficulty-level">Difficulty: <span id="level">Easy</span></div>
+      <div id="timer">Time Left: <span id="time">80</span> seconds</div>
+      <div id="points">Points: <span id="score">100</span></div>
+    </div>
+
+    <!-- Puzzle Pieces and Slots -->
+    <div id="puzzle-container">
+      <div id="code-pieces"></div>
+      <div id="slots"></div>
+    </div>
+
+    <button id="submit-btn">Submit</button>
+  </div>
+
+  <!-- Success and Failure Screens -->
+  <div id="result-modal" class="modal hidden">
+    <div class="modal-content">
+        <span id="result-message"></span>
+        <button id="retry-btn" class="hidden">Retry</button>
+        <button id="next-level-btn" class="hidden">Next Level</button>
+        <button id="close-modal-btn">Close</button>
+    </div>
+</div>
+
+
+  <script src="game.js"></script>
+</body>
+</html>
