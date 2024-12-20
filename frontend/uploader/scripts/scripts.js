@@ -10,11 +10,11 @@ document.addEventListener("DOMContentLoaded", () => {
             fileEntry.classList.add("file-entry");
 
             fileEntry.innerHTML = `
-                <label>File Title:</label>
-                <input type="text" class="fileTitle" name="fileTitle[]" required />
-                
-                <label>Upload File:</label>
-                <input type="file" class="fileInput" name="files[]" required />
+                <p><label>File Title:</label>
+                <input type="text" class="fileTitle" name="fileTitle[]" required /></p>
+                                    
+                <p><label>Upload File:</label>
+                <input type="file" class="fileInput" name="files[]" required /></p>
             `;
             filesContainer.appendChild(fileEntry);
         }
@@ -26,22 +26,20 @@ document.addEventListener("DOMContentLoaded", () => {
         subSection.classList.add("sub-section");
 
         subSection.innerHTML = `
-            <label>Sub-section Title:</label>
-            <input type="text" class="subSectionTitle" name="subSectionTitle[]" required />
-            
-            <!-- Files under Sub-section -->
-            <div class="files">
-                <div class="file-entry">
-                    <label>File Title:</label>
-                    <input type="text" class="fileTitle" name="fileTitle[]" required />
-                    
-                    <label>Upload File:</label>
-                    <input type="file" class="fileInput" name="files[]" required />
+            <p><label>Sub-section Title:</label>
+                <input type="text" class="subSectionTitle" name="subSectionTitle[]" required /></p>
+                            
+                <div class="files">
+                    <div class="file-entry">
+                        <p><label>File Title:</label>
+                        <input type="text" class="fileTitle" name="fileTitle[]" required /></p>
+                                    
+                        <p><label>Upload File:</label>
+                        <input type="file" class="fileInput" name="files[]" required /></p>
+                    </div>
                 </div>
-            </div>
-
-            <!-- Add more files button -->
-            <button type="button" class="addFileBtn">Add more files</button>
+                
+                <button type="button" class="addFileBtn">Add more files</button>
         `;
         subSectionsContainer.appendChild(subSection);
     });

@@ -4,13 +4,30 @@ body {
     font-family: "Poppins", sans-serif;
     background-color: #f4f4f9;
     margin: 0;
-    padding: 20px;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+  }
+
+  .game {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 30px;
+    border: 5px solid #3d6fd0;
+    border-radius: 15px;
+    min-width: 700px;
+    max-width: 900px;
   }
   
   #ai-instructor {
     display: flex;
     align-items: center;
-    background-color: #f0f0f0;
+    background-color: #fff;
     padding: 15px;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -21,6 +38,15 @@ body {
     height: 50px;
     margin-right: 10px;
   }
+
+  #submit-btn {
+    background: #3d6fd0;
+    padding: 10px 25px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+  }
   
   #ai-text {
     font-size: 16px;
@@ -30,13 +56,14 @@ body {
   #header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    width: 100%;
   }
   
   #puzzle-container {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    width: 100%;
+    padding: 25px;
   }
   
   .piece, .slot {
@@ -50,6 +77,12 @@ body {
     text-align: center;
     cursor: pointer;
   }
+
+  #game-interface {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
   
   .piece.selected {
     background-color: #2f5a28;
@@ -58,6 +91,8 @@ body {
   .slot {
     background-color: #97939365;
     border: 2px dashed #353434b7;
+    min-width: 70px;
+    min-height: 40px;
   }
   
   #result-screen.hidden {

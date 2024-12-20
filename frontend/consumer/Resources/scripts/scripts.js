@@ -51,3 +51,17 @@ categories.forEach(category => {
       coursePadContainer.innerHTML = courseData[selectedCategory] || '<p>No courses available for this category.</p>';
     });
 });
+
+const API = "http://localhost:5000/api";
+
+// Example: Login
+async function login(email, password) {
+  const res = await axios.post(`${API}/auth/login`, { email, password });
+  console.log(res.data);
+}
+
+// Example: Fetch Courses
+async function fetchCourses() {
+  const res = await axios.get(`${API}/courses`);
+  console.log(res.data);
+}

@@ -4,43 +4,127 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Interactive Code Puzzle Game</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="../Resources/styles/style.css">
+  <link rel="stylesheet" href="../Resources/styles/courses.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <header class="header">
+        
+    <div class="logo"><img src="../../images/logo.png">Edu-Bus</div>
+    <div class="tab">
+        <div class="nav">
+            <a href="">Home</a>
+            <a href="./courses.html" class="active">Course</a>
+            <a href="./about.html">About</a>
+            <a href="./leaderboard.html">Leaderboard</a>
+        </div>
+        <div class="sign">
+            <li class="bal"><i class='bx bxl-bitcoin' ></i><span class="balance">103</span></li>
+            <li>
+                <p class="parent"><i class='bx bxs-user' ></i><span id="username">Olalere</span><i class='bx bx-chevron-down' id="clicker" ></i></p>
+                <p class="profile">
+                    <a href="./profile.html"><i class='bx bxs-user' ></i>Profile</a>
+                    <a href="./my_learning.html"><i class='bx bx-book' ></i>My Learning</a>
+                    <a href=""><i class='bx bx-log-out' ></i>Logout</a>
+                </p>
+            </li>
+        </div>
+    </div>
+
+    <div id="hamburger" class="rotate2">
+        <div class="menu"></div>
+    </div>
+
+</header>
+
   <!-- AI Instructor Section -->
-  <div id="ai-instructor">
-    <img src="images/chatbot.png" title="chatbot icons" alt="AI" id="ai-logo" />
-    <div id="ai-text"></div>
+<section class="main">
+
+  <h1>Game mode</h1>
+
+  <div class="game">
+    <div id="ai-instructor">
+      <img src="../images/chatbot.png" title="chatbot icons" alt="AI" id="ai-logo" />
+      <div id="ai-text"></div>
+    </div>
+  
+    <!-- Game Interface -->
+    <div id="game-interface">
+      <div id="header">
+        <div id="difficulty-level">Difficulty: <span id="level">Easy</span></div>
+        <div id="timer">Time Left: <span id="time">80</span> seconds</div>
+        <div id="points">Points: <span id="score">100</span></div>
+      </div>
+  
+      <!-- Puzzle Pieces and Slots -->
+      <div id="puzzle-container">
+        <div id="code-pieces"></div>
+        <div id="slots"></div>
+      </div>
+  
+      <button id="submit-btn">Submit</button>
+    </div>
+  
+    <!-- Success and Failure Screens -->
+    <div id="result-modal" class="modal hidden">
+      <div class="modal-content">
+          <span id="result-message"></span>
+          <button id="retry-btn" class="hidden">Retry</button>
+          <button id="next-level-btn" class="hidden">Next Level</button>
+          <button id="close-modal-btn">Close</button>
+      </div>
+    </div>
   </div>
-
-  <!-- Game Interface -->
-  <div id="game-interface">
-    <div id="header">
-      <div id="difficulty-level">Difficulty: <span id="level">Easy</span></div>
-      <div id="timer">Time Left: <span id="time">80</span> seconds</div>
-      <div id="points">Points: <span id="score">100</span></div>
-    </div>
-
-    <!-- Puzzle Pieces and Slots -->
-    <div id="puzzle-container">
-      <div id="code-pieces"></div>
-      <div id="slots"></div>
-    </div>
-
-    <button id="submit-btn">Submit</button>
-  </div>
-
-  <!-- Success and Failure Screens -->
-  <div id="result-modal" class="modal hidden">
-    <div class="modal-content">
-        <span id="result-message"></span>
-        <button id="retry-btn" class="hidden">Retry</button>
-        <button id="next-level-btn" class="hidden">Next Level</button>
-        <button id="close-modal-btn">Close</button>
-    </div>
-</div>
-
-
   <script src="game.js"></script>
+
+</section>
+
+<footer class="footer">
+  <div class="closure">
+      <div class="logo_description">
+          <div class="logo"><img src="../../images/logo2.png">Edu-Bus</div>
+          <p class="description">
+              Top learning experience that create more talent in the world.
+          </p>
+      </div>
+      <div class="navigations">
+          <ul>
+              <li>Product</li>
+              <li><a href="">Overview</a></li>
+              <li><a href="">Features</a></li>
+              <li><a href="">Solutions</a></li>
+              <li><a href="">Tutorials</a></li>
+              <li><a href="">Pricing</a></li>
+          </ul>
+          <ul>
+              <li>Company</li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Careers</a></li>
+              <li><a href="">Press <span class="pod">New</span></a></li>
+              <li><a href="">News</a></li>
+          </ul>
+          <ul>
+              <li>Social</li>
+              <li><a href="">Twitter</a></li>
+              <li><a href="">LinkedIn</a></li>
+              <li><a href="">GitHub</a></li>
+              <li><a href="">Dribble</a></li>
+          </ul>
+          <ul>
+              <li>Legal</li>
+              <li><a href="">Terms</a></li>
+              <li><a href="">Privacy</a></li>
+              <li><a href="">Cookies</a></li>
+              <li><a href="">Contact</a></li>
+          </ul>
+      </div>
+  </div>
+  <div class="footnote">&copy; 2024 Edu-Bus. All rights reserved.</div>
+</footer>
+
+
 </body>
 </html>
